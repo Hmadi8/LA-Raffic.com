@@ -1,0 +1,43 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(650deg, #090f66, #000000);
+
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            gap: 20px;
+        }
+      nav  .het{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 40%;
+            border-radius: 10px;
+            height: 40%;
+            background: #b6b8d1;
+        }
+        nav a button {
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 10px 5px;
+
+        }
+        header{
+            color: white;
+            text-align: center;
+            background-color: #000000;
+            padding: 5px;
+        }
