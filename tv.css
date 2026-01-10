@@ -1,0 +1,110 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(650deg, #dfd0d0, #FAFAFA);
+        }
+
+        header {
+            text-align: center;
+            font-weight: 900;
+            background: cornsilk;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            gap: 20px;
+            
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            align-items: center;
+            gap: 10px;
+            width: 60%;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 50%;
+            background: #b6b8d1;
+
+        }
+
+        nav .content a button {
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 10px 5px;
+        }
+
+        nav .content a button:hover {
+            transform: scale(1.2);
+            transition: 2s;
+            background: red;
+            color: #dfd0d0;
+        }
+        @media (min-width:600px) {
+                    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: red;
+        }
+
+        header {
+            text-align: center;
+            font-weight: 900;
+            background: cornsilk;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            gap: 20px;
+            
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            align-items: center;
+            gap: 10px;
+            width: 60%;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 50%;
+            background: #b6b8d1;
+
+        }
+
+        nav .content a button {
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 10px 5px;
+        }
+
+        nav .content a button:hover {
+            transform: scale(1.2);
+            transition: 2s;
+            background: red;
+            color: #dfd0d0;
+        }
+        }
