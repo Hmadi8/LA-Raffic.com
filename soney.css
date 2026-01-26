@@ -1,0 +1,176 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 40px;
+            background: linear-gradient(650deg, rgb(255, 251, 0), green);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: wrap;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            animation: colr 2s ease;
+            background: linear-gradient(270deg,
+                    #ff004c,
+                    #00c3ff,
+                    #00ff9d);
+            background-size: 600% 600%;
+            animation: col 10s ease infinite;
+
+            z-index: 1000;
+        }
+
+
+        @keyframes col {
+            20% {
+                background-position: 0% 50%;
+            }
+
+            60% {
+                background-position: 100% 50%;
+            }
+
+            180% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            background: green;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: larger;
+        }
+
+        main {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+            min-height: 100vh;
+
+
+
+        }
+
+        .product {
+            display: flex;
+            flex-flow: column;
+            background-color: whitesmoke;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+            border-radius: 30px;
+
+        }
+
+        .product img {
+            width: 80%;
+            object-fit: cover;
+        }
+
+        /* #endregion */
+        .cart {
+            display: flex;
+            justify-content: space-evenly;
+            direction: rtl;
+            align-items: end;
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .cart p {
+            padding: 10px 20px;
+        }
+
+        .cart img {
+            width: 10%;
+            height: auto;
+
+        }
+
+        @media (max-width:500px) {
+            header a {
+                background-color: black;
+                width: 100px;
+                height: 50px;
+                padding: 15px 30px;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*  main {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+ #endregion */
+            main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 20px;
+                gap: 15px;
+                background-color: rgb(12, 12, 228);
+            }
+
+            .product {
+                background: rgb(9, 140, 228);
+                border-radius: 10px;
+                width: 100%;
+                overflow: hidden;
+
+            }
+
+            .product img {
+                width: 95%;
+                height: 90%;
+            }
+
+            .cart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 15px;
+                direction: rtl;
+                border-radius: 20px;
+                height: 50px;
+                width: 150px;
+                background: green;
+                color: white;
+
+
+            }
+
+            .cart img {
+
+                width: 20%;
+                height: auto;
+
+            }
+        }
+
+        /* #region */
+
+        /* #endregion */
+
+        /* #endregion */
